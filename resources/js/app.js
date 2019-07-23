@@ -42,6 +42,8 @@ import Add from './components/add.vue';
 import Edit from './components/edit.vue';
 import Delete from './components/delete.vue';
 import Detail from './components/detail.vue';
+import Login from './components/login.vue';
+import Register from './components/register.vue';
 
 //Vue.use(VueRouter,VueAxios,axios);
 
@@ -50,9 +52,11 @@ const routes =[
     {name:'Add',path:'/add',component:Add},
     {name:'Edit',path:'/edit/:id',component:Edit},
     {name:'Delete',path:'/delete/:id',component:Delete},
-    {name:'Detail',path:'/detail/:id',component:Detail}
+    {name:'Detail',path:'/detail/:id',component:Detail},
+    {name:'Login',path:'/login',component:Login},
+    {name:'Register',path:'/register',component:Register}
 ];
-const router = new VueRouter({mode:'history',routes});
+const router = new VueRouter({routes});//mode:'history',
 //Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 /**
